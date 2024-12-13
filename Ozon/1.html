@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ozon</title>
+    <link rel="stylesheet" href="styles.css">
+
+
+
+
+
+    <style>
+        /* Дополнительные стили для поиска */
+        .search-container {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .search-container input[type="text"] {
+            padding: 10px;
+            width: 300px;
+            font-size: 16px;
+        }
+        .search-container button {
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+        }
+    </style>
+
+
+
+
+</head>
+
+
+
+
+
+
+<body>
+
+
+
+    
+
+
+
+
+
+
+    <header>
+
+
+
+
+
+
+
+        <div class="logo">OZON</div>
+        
+
+
+
+        
+
+
+        
+       <!-- Форма поиска -->
+<div class="search-container">
+    <input type="text" id="search-input" placeholder="Искать на Ozon" onkeydown="handleEnterPress(event)">
+    <button onclick="searchProducts()">
+        <i class="fas fa-search"></i> 
+    </button>
+</div>
+
+    
+       <!-- Каталог -->
+    <div class="catalog-container">
+        <span class="catalog-text">КАТАЛОГ</span>
+    </div>
+
+
+        <nav>
+            <ul>
+                <li><a href="#">Войти</a></li>
+                <li><a href="#">Заказы</a></li>
+                <li><a href="#">Избранное</a></li>
+                <li><a href="#">Корзина</a></li>
+            </ul>
+        </nav>
+    
+    </header>
+    
+    <div id="search-results"></div>
+    
+
+
+
+
+
+
+
+
+
+
+    <body>
+        <div>
+           <div class="wave"></div>
+           <div class="wave"></div>
+           <div class="wave"></div>
+        </div>
+      </body>
+
+
+
+      <link rel="stylesheet" href="styles.css?v=1.1">
+
+    
+
+
+
+
+
+
+    <main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <section class="products">
+
+            
+            <h2>Популярные товары</h2>
+            <div class="product-list" id="product-list">
+
+
+<!-- Товары сверху -->
+<div class="product-list">
+    <div class="product-item">
+        <img src="https://ir-3.ozone.ru/s3/multimedia-7/wc1000/6663316003.jpg" alt="Товар 1">
+
+        <!-- Блок с ценой -->
+        <div class="price">
+            1500 ₽ <!-- новая цена -->
+            <span class="old-price">2000 ₽</span> <!-- старая цена -->
+            <span class="discount">-25%</span> <!-- скидка -->
+        </div>
+
+        <!-- Блок с описанием товара -->
+        <div class="description">
+            <h3>Конденсаторный RGB USB микрофон Fifine</h3>
+        </div>
+        
+        <span class="rating">
+            <span class="stars">★ 4.7</span> 
+            <span class="reviews">(1324 Отзывов)</span>
+        </span>
+    </div>
+
+    <div class="product-item">
+        <img src="https://ir-3.ozone.ru/s3/multimedia-1-3/wc1000/7040346483.jpg" alt="Товар 2">
+
+        <!-- Блок с ценой -->
+        <div class="price">
+            1200 ₽ <!-- новая цена -->
+            <span class="old-price">1500 ₽</span> <!-- старая цена -->
+            <span class="discount">-20%</span> <!-- скидка -->
+        </div>
+
+        <!-- Блок с описанием товара -->
+        <div class="description">
+            <h3>Смазка силиконовая для автомобиля</h3>
+        </div>
+        
+        <span class="rating">
+            <span class="stars">★ 5</span> 
+            <span class="reviews">(124 Отзывов)</span>
+        </span>
+    </div>
+
+    <div class="product-item">
+        <img src="https://ir-3.ozone.ru/s3/multimedia-1-r/wc1000/7069611447.jpg" alt="Товар 3">
+
+        <!-- Блок с ценой -->
+        <div class="price">
+            1600 ₽ <!-- новая цена -->
+            <span class="old-price">1800 ₽</span> <!-- старая цена -->
+            <span class="discount">-11%</span> <!-- скидка -->
+        </div>
+
+        <!-- Блок с описанием товара -->
+        <div class="description">
+            <h3>Аниме коврик для мыши</h3>
+        </div>
+        
+        <span class="rating">
+            <span class="stars">★ 4.9</span> 
+            <span class="reviews">(174 Отзывов)</span>
+        </span>
+    </div>
+
+    <div class="product-item">
+        <img src="https://ir-3.ozone.ru/s3/multimedia-t/wc1000/6797110025.jpg" alt="Товар 4">
+
+        <!-- Блок с ценой -->
+        <div class="price">
+            2000 ₽ <!-- новая цена -->
+            <span class="old-price">2500 ₽</span> <!-- старая цена -->
+            <span class="discount">-20%</span> <!-- скидка -->
+        </div>
+
+        <!-- Блок с описанием товара -->
+        <div class="description">
+            <h3>Кроссовки Columbia</h3>
+        </div>
+        
+        <span class="rating">
+            <span class="stars">★ 4.6</span> 
+            <span class="reviews">(787 Отзывов)</span>
+        </span>
+    </div>
+
+    <div class="product-item">
+        <img src="https://ir-3.ozone.ru/s3/multimedia-1-w/wc1000/6926396468.jpg" alt="Товар 5">
+
+        <!-- Блок с ценой -->
+        <div class="price">
+            700 ₽ <!-- новая цена -->
+            <span class="old-price">900 ₽</span> <!-- старая цена -->
+            <span class="discount">-22%</span> <!-- скидка -->
+        </div>
+
+        <!-- Блок с описанием товара -->
+        <div class="description">
+            <h3>DEFENDER Тройник на 3 розетки</h3>
+        </div>
+        
+        <span class="rating">
+            <span class="stars">★ 4.5</span> 
+            <span class="reviews">(987 Отзывов)</span>
+        </span>
+    </div>
+</div>
+
+<!-- Товары снизу -->
+<div class="product-list">
+    <div class="product-item">
+        <img src="https://ir-3.ozone.ru/s3/multimedia-5/wc1000/6581774957.jpg" alt="Товар 6">
+
+        <!-- Блок с ценой -->
+        <div class="price">
+            500 ₽ <!-- новая цена -->
+            <span class="old-price">600 ₽</span> <!-- старая цена -->
+            <span class="discount">-17%</span> <!-- скидка -->
+        </div>
+
+        <!-- Блок с описанием товара -->
+        <div class="description">
+            <h3>Зарядка для iPhone</h3>
+        </div>
+        
+        <span class="rating">
+            <span class="stars">★ 3.2</span> 
+            <span class="reviews">(13 Отзывов)</span>
+        </span>
+    </div>
+
+    <div class="product-item">
+        <img src="https://ir-3.ozone.ru/s3/multimedia-v/wc1000/6675453139.jpg" alt="Товар 7">
+
+        <!-- Блок с ценой -->
+        <div class="price">
+            1300 ₽ <!-- новая цена -->
+            <span class="old-price">1500 ₽</span> <!-- старая цена -->
+            <span class="discount">-13%</span> <!-- скидка -->
+        </div>
+
+        <!-- Блок с описанием товара -->
+        <div class="description">
+            <h3>Игровой коврик для мыши</h3>
+        </div>
+        
+        <span class="rating">
+            <span class="stars">★ 4.4</span> 
+            <span class="reviews">(241 Отзывов)</span>
+        </span>
+    </div>
+
+    <div class="product-item">
+        <img src="https://ir-3.ozone.ru/s3/multimedia-1-x/wc1000/7095331581.jpg" alt="Товар 8">
+
+        <!-- Блок с ценой -->
+        <div class="price">
+            1500 ₽ <!-- новая цена -->
+            <span class="old-price">1800 ₽</span> <!-- старая цена -->
+            <span class="discount">-17%</span> <!-- скидка -->
+        </div>
+
+        <!-- Блок с описанием товара -->
+        <div class="description">
+            <h3>Костюм спортивный</h3>
+        </div>
+        
+        <span class="rating">
+            <span class="stars">★ 4.6</span> 
+            <span class="reviews">(167 Отзывов)</span>
+        </span>
+    </div>
+
+    <div class="product-item">
+        <img src="https://ir-3.ozone.ru/s3/multimedia-1-v/wc1000/7146984163.jpg" alt="Товар 9">
+
+        <!-- Блок с ценой -->
+        <div class="price">
+            600 ₽ <!-- новая цена -->
+            <span class="old-price">750 ₽</span> <!-- старая цена -->
+            <span class="discount">-20%</span> <!-- скидка -->
+        </div>
+
+        <!-- Блок с описанием товара -->
+        <div class="description">
+            <h3>Сетевой фильтр 3 розетки</h3>
+        </div>
+        
+        <span class="rating">
+            <span class="stars">★ 4.7</span> 
+            <span class="reviews">(379 Отзывов)</span>
+        </span>
+    </div>
+
+    <div class="product-item">
+        <img src="https://ir-3.ozone.ru/s3/multimedia-1-1/wc1000/7070966569.jpg" alt="Товар 10">
+
+        <!-- Блок с ценой -->
+        <div class="price">
+            350 ₽ <!-- новая цена -->
+            <span class="old-price">450 ₽</span> <!-- старая цена -->
+            <span class="discount">-22%</span> <!-- скидка -->
+        </div>
+
+        <!-- Блок с описанием товара -->
+        <div class="description">
+            <h3>Автомобильный держатель</h3>
+        </div>
+        
+        <span class="rating">
+            <span class="stars">★ 4.1</span> 
+            <span class="reviews">(49 Отзывов)</span>
+        </span>
+    </div>
+</div>
+
+
+
+
+
+    <footer>
+        <p>&copy; 2024 Магазин. Все права защищены.</p>
+    </footer>
+
+
+
+
+
+
+
+
+
+    <script>
+        function searchProducts() {
+            let searchInput = document.getElementById('search-input').value.toLowerCase();
+            let products = document.querySelectorAll('.product-item');
+
+            products.forEach(product => {
+                let productName = product.querySelector('h3').textContent.toLowerCase();
+                if (productName.includes(searchInput)) {
+                    product.style.display = 'block';  // Показываем товар, если он совпадает с запросом
+                } else {
+                    product.style.display = 'none';  // Прячем товар, если он не совпадает
+                }
+            });
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
+<script>
+    // Функция поиска товаров
+    async function searchProducts() {
+        // Получаем текст из поля поиска
+        const searchQuery = document.getElementById('search-input').value.toLowerCase();
+        const resultsContainer = document.getElementById('search-results');
+
+        // Очищаем предыдущие результаты
+        resultsContainer.innerHTML = '';
+
+        // Если нет запроса, ничего не ищем
+        if (!searchQuery) {
+            resultsContainer.innerHTML = '<p>Введите запрос для поиска.</p>';
+            return;
+        }
+
+        try {
+            // Запрос к локальному API (замените на реальный URL)
+            const response = await fetch('http://127.0.0.1:5500/1.html');
+            const data = await response.json();
+
+            // Фильтруем товары по запросу
+            const filteredData = data.filter(item =>
+                item.name.toLowerCase().includes(searchQuery)
+            );
+
+            // Проверяем, есть ли результаты
+            if (filteredData.length > 0) {
+                filteredData.forEach(item => {
+                    const productElement = document.createElement('div');
+                    productElement.classList.add('product-item');
+                    productElement.innerHTML = `
+                        <h3>${item.name}</h3>
+                        <p>Цена: ${item.price} ₽</p>
+                        <p>${item.description}</p>
+                    `;
+                    resultsContainer.appendChild(productElement);
+                });
+            } else {
+                resultsContainer.innerHTML = '<p>Товары не найдены.</p>';
+            }
+        } catch (error) {
+            console.error('Ошибка при поиске товаров:', error);
+            resultsContainer.innerHTML = '<p>Произошла ошибка. Попробуйте снова позже.</p>';
+        }
+    }
+</script>
+
+
